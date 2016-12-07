@@ -103,3 +103,191 @@ a.hd-comment{
     }
     transition:bottom .5s;
 }
+
+.child-tap{
+    position: absolute;
+    display: none;
+    left: 234px;
+    top: -460px;
+    height: 458px;
+    width: auto;
+    border:1px solid #e0e0e0;
+    border-left: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    background: #fff;
+    @include clearfix;
+    .child-list{
+        float: left;
+        width: 265px;
+        height: 458px;
+        .child-item{
+            width: 265px;
+            height: 76px;
+            @include clearfix;
+            position: relative;
+            a.product{
+                float: left;
+                height: 40px;
+                padding: 18px 0 18px 20px;
+                @include clearfix;
+                &:hover span{
+                    color: #f60;
+                }
+                img{
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                }
+                span{
+                    float: left;
+                    font-size: 14px;
+                    line-height: 40px;
+                    padding-left: 12px;
+                    color: #333;
+                }
+            }
+            a.buy{
+                position: absolute;
+                right: 10px;
+                top: 27px;
+                line-height: 22px;
+                padding: 0 15px;
+                font-size: 12px;
+                text-align: center;
+                border: 1px solid #f60;
+                transition: background .4s;
+                color: #f60;
+                &:hover{
+                    background: #f60;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.ban-dot-wrap{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    right: 30px;
+    bottom: 20px;
+    text-align: right;
+    line-height: 40px;
+    span{
+        display: inline-block;
+        margin: 0 5px;
+        padding: 3px;
+        border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.3);
+    }
+    span.current{
+        background: rgba(255,255,255,0.4);
+    }
+}
+
+@mixin arr{
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    top: 50%;
+    font-size: 24px;
+    margin-top: -35px;
+    color: #757575;
+    background: transparent;
+    transition: all .2s;
+    cursor: pointer;
+    text-align: center;
+    line-height: 70px;
+    &:hover{
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+    }
+}
+.ban-dot-arrL.arr{
+    @include arr;
+    left: 234px;
+}
+.ban-dot-arrL.arr>i.iconfont{
+    font-size: 24px;
+}
+.ban-dot-arrR.arr>i.iconfont{
+    font-size: 24px;
+}
+.ban-dot-arrR.arr{
+    @include arr;
+    right: 0;
+}
+
+.sum-top-info{
+    background: #5f5750;
+    ul{
+      @include clearfix ;
+      background: #5f5750;
+      li{
+          position: relative;
+          float: left;
+          padding: 0 3px;
+          width: 70px;
+          height: 65px;
+          text-align: center;
+          padding-top: 18px;
+          color: rgba(255,255,255,0.7);
+          &:after{
+              position: absolute;
+              content: '';
+              width: 1px;
+              height: 70px;
+              left: 0;
+              top: 6px;
+              background: #665e57;
+          }
+          &:hover{
+              color: #fff;
+          }
+          i.iconfont{
+              font-size: 16px;
+              cursor: pointer;
+          }
+          p{
+              line-height: 24px;
+              cursor: pointer;
+          }
+      }
+      li.top{
+          background: transparent;
+          height: 66px;
+      }
+      li.top:after{
+          position: absolute;
+          content: '';
+          width: 64px;
+          height: 1px;
+          bottom: 0;
+          left: 6px;
+          background: #665e57;
+      }
+      li.first:after{
+          display: none;
+      }  
+    }
+}
+
+
+
+@mixin toptip{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    font-size: 12px;
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+.top-tips{
+    @include toptip;
+}

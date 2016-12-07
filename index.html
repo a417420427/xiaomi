@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>小米商城</title>
 		<link rel="stylesheet" type="text/css" href="css/addition.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
 		<style type="text/css">
 			.test{
 				width: 100px;
@@ -43,8 +44,11 @@
 					<a href="javascript：；">Select Region</a>
 				</div>
 				<div class="tp-cart">
-					<i class="iconfont"></i>
+					<i class="iconfont icon-gouwuche"></i>
 					<b>购物车</b>
+					<div class="tp-ct-inner">
+						<p>您的购物车是空的</p>
+					</div>
 				</div>
 				<div class="tp-info">
 					<a href="javascript:;">登录</a>
@@ -71,8 +75,17 @@
 					<li><a href="javascript:;">社区</a></li>
 				</ul>
 				<div class="hd-search">
-					<input type="text" class="hd-sch-ipt"/>
-					<input type="submit" class="hd-sch-btn" value=""/>
+					<div class="text-wrap">
+						<input type="text" class="hd-sch-ipt"/>
+						<span class="push">小米mix</span>
+						<span class="pop">人工智能电视</span>
+					</div>
+					<div class="btn-wrap">
+						<input type="submit" class="hd-sch-btn" value=""/>
+						<i class="iconfont icon-sousuokuangsousuo"></i>
+					</div>
+					
+					
 				</div>
 			</div>
 			
@@ -484,9 +497,686 @@
 							<li class="ban-carousel-item"><img src="img/banner/b4.jpg"/></li>
 							<li class="ban-carousel-item"><img src="img/banner/b5.jpg"/></li>
 						</ul>
+						<div class="ban-dot-arrL arr">
+							<i class="iconfont icon-zuobian"></i>
+						</div>
+						<div class="ban-dot-arrR arr">
+							<i class="iconfont icon-xiangyou6"></i>
+						</div>
+						<div class="ban-dot-wrap arr">
+							
+						</div>
 					</div>
 				</div>
+				
 			</div>
+			
+			<!--banner区选项卡-->
+			<div class="container ban-tap-wrap">
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xmNOTE2-80.jpg"/>
+								<span>小米Note 2</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/MIX-80.jpg"/>
+								<span>小米MIX</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5S-80.jpg"/>
+								<span>小米5S</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5S-plus-80.jpg"/>
+								<span>小米5S Plus</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5-80.jpg"/>
+								<span>小米5</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xmmax-80.jpg"/>
+								<span>小米Max</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm4-80.jpg"/>
+								<span>红米4</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm4A-80.jpg"/>
+								<span>红米4A</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hmnote4-80.jpg"/>
+								<span>红米Note 4</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hmnote3-80.jpg"/>
+								<span>红米Note 3</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm3s-80.jpg"/>
+								<span>红米手机3S</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/3X80.jpg"/>
+								<span>红米Pro</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/3X80.jpg"/>
+								<span>红米手机3X</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/heyue.jpg"/>
+								<span>合约机</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/compare.jpg"/>
+								<span>对比手机</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/mimobile.jpg"/>
+								<span>小米移动 电话卡</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--pad-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/pad/bijiben80 (1).jpg"/>
+								<span>小米笔记本air</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/pad/pad2.jpg"/>
+								<span>小米平板2</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/pad/usbzjqggg80.jpg"/>
+								<span>USB-C转接器</span>
+							</a>
+							
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/pad/neidanbao80.jpg"/>
+								<span>小米笔记本内胆包</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/pad/shubiao80.jpg"/>
+								<span>小米便携鼠标</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--television-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/4380side.jpg"/>
+								<span>小米电视3s 43英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/mitv3s48.jpg"/>
+								<span>小米电视3s 48英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/553s80.png"/>
+								<span>小米电视3s 55英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/018080.png"/>
+								<span>小米电视3s 60英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span>小米电视3s 65英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/6580side.jpg"/>
+								<span>小米电视3s 65英寸曲面</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/compare.jpg"/>
+								<span>小米电视3s</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/compare.jpg"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/018080.png"/>
+								<span>小米电视3s 60英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span>小米电视3s 65英寸</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/6580side.jpg"/>
+								<span>小米电视3s 65英寸曲面</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--source-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xmNOTE2-80.jpg"/>
+								<span>小米Note 2</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/MIX-80.jpg"/>
+								<span>小米MIX</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5S-80.jpg"/>
+								<span>小米5S</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5S-plus-80.jpg"/>
+								<span>小米5S Plus</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xm5-80.jpg"/>
+								<span>小米5</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/xmmax-80.jpg"/>
+								<span>小米Max</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm4-80.jpg"/>
+								<span>红米4</span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm4A-80.jpg"/>
+								<span>红米4A</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hmnote4-80.jpg"/>
+								<span>红米Note 4</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hmnote3-80.jpg"/>
+								<span>红米Note 3</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/hm3s-80.jpg"/>
+								<span>红米手机3S</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/3X80.jpg"/>
+								<span>红米Pro</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/3X80.jpg"/>
+								<span>红米手机3X</span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/heyue.jpg"/>
+								<span>合约机</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/compare.jpg"/>
+								<span>对比手机</span>
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/mimobile.jpg"/>
+								<span>小米移动 电话卡</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--hardware-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--head set-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--pasting-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--parts-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--cdress-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--around-->
+				<div class="child-tap">
+					<ul class="child-list">
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">
+								选购
+							</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+						<li class="child-item">
+							<a href="" class="product">
+								<img src="img/bannertap/television/653s80.png"/>
+								<span></span>
+							</a>
+							<a href="" class="buy">选购</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
 		</div>
 		
 		<div class="main-sub">
@@ -495,7 +1185,30 @@
 				<div class="main-top">
 					<div class="sum-top-info">
 						<ul>
-							<li></li>
+							<li class="first top">
+								<i class="iconfont icon-shouji"></i>
+								<p>选购手机</p>
+							</li>
+							<li class="top">
+								<i class="iconfont icon-icontuan"></i>
+								<p>企业团购</p>
+							</li>
+							<li class="top">
+								<i class="iconfont icon-xunhuan"></i>
+								<p>官翻产品</p>
+							</li>
+							<li>
+								<i class="iconfont icon-SIMqia"></i>
+								<p>小米移动</p>
+							</li>
+							<li  class="first">
+								<i class="iconfont icon-genghuan01"></i>
+								<p>以旧换新</p>
+							</li>
+							<li>
+								<i class="iconfont icon-yinxingqia"></i>
+								<p>话费充值</p>
+							</li>
 						</ul>
 					</div>
 					<ul class="sum-top-product">
@@ -521,8 +1234,8 @@
 					<div class="title-w">
 						<h3 class="title">小米明星产品</h3>
 						<div class="more">
-							<a href="javascript:;">1</a>
-							<a href="javascript:;">1</a>
+							<a href="javascript:;" class="iconfont icon-xiangzuo3 star-lef current"></a>
+							<a href="javascript:;" class="iconfont icon-youbian-copy star-rt"></a>
 						</div>
 					</div>
 					<div class="sum-star-content">
@@ -576,13 +1289,13 @@
 								<span>79元</span>
 							</li>
 							<li class="sum-sta-item">
-								<a href="javascript:;"><img src="img/star" alt="" /></a>
+								<a href="javascript:;"><img src="img/star/1.jpg" alt="" /></a>
 								<h4>米家恒温电水壶</h4>
 								<p>快速沸腾，水温智能控制</p>
 								<span>199元</span>
 							</li>
 							<li class="sum-sta-item">
-								<a href="javascript:;"><img src="img/star" alt="" /></a>
+								<a href="javascript:;"><img src="img/star/2.jpg" alt="" /></a>
 								<h4>小米净水器 厨下式</h4>
 								<p>直出纯净水，隐藏式安装</p>
 								<span>1999元</span>
@@ -599,7 +1312,12 @@
 				<div class="mn-auto">
 					<div class="title-w">
 						<h3 class="title">智能硬件</h3>
-						<div class="more">123</div>
+						<div class="more">
+							<a href="" class="all">
+								查看全部
+								<i class="iconfont icon-xiangyou4"></i>
+							</a>
+						</div>
 					</div>
 					<div class="mn-at-content">
 						<div class="left">
@@ -613,6 +1331,7 @@
 								<a href="" class="name">小米路由器3C</a>
 								<p>APP智能控制，安全防蹭网</p>
 								<b>99元</b>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a class="display" href="">
@@ -629,6 +1348,7 @@
 								<a href="" class="name">小米净水器（厨上式）</a>
 								<p>限量送 TDS 检测笔</p>
 								<b>1299元</b>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a class="display" href="">
@@ -669,6 +1389,7 @@
 								<a href="" class="name">米家 LED 智能台灯</a>
 								<p>无可视频闪，亮度色温无级调节</p>
 								<b>169元</b>
+								<span class="top-tips">新品</span>
 							</li>
 						</ul>
 					</div>
@@ -677,7 +1398,12 @@
 				<div class="main-match">
 					<div class="title-w">
 						<h3 class="title">搭配</h3>
-						<div class="more">1234</div>
+						<div class="more">
+							<a href="" class="cat-item current">热门</a>
+							<a href="" class="cat-item">耳机音箱</a>
+							<a href="" class="cat-item">电源</a>
+							<a href="" class="cat-item">电池储存卡</a>
+						</div>
 					</div>
 					<div class="mn-mat-content">
 						<div class="left">
@@ -688,8 +1414,8 @@
 								<img src="img/match/4df2.jpg" alt="" />
 							</a>
 						</div>
-				
-						<ul class="right">
+						<!--热门 -->
+						<ul class="right current">
 							<li>
 								<a href="" class="display">
 									<img src="img/match/pms_1479724763.43233402!220x220.jpg"/>
@@ -697,6 +1423,7 @@
 								<a href="" class="name">小米网络音箱</a>
 								<b>399元</b>
 								<p>0人评价</p>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -705,6 +1432,7 @@
 								<a href="" class="name">小米胶囊耳机</a>
 								<b>69元</b>
 								<p>2万人评价</p>
+								<span class="top-tips">有赠品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -713,6 +1441,7 @@
 								<a href="" class="name">小米活塞耳机 基础版</a>
 								<b>29元</b>
 								<p>7.3万人评价</p>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -737,6 +1466,7 @@
 								<a href="" class="name">方盒子音箱</a>
 								<b>99元</b>
 								<p>1.5万人评价</p>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -754,7 +1484,243 @@
 										<img src="img/match/T1MDK_B_YT1RXrhCrK!220x220.jpg"/>
 									</a>
 								</div>
-								<div class="view"></div>
+								
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
+							</li>
+						</ul>
+						<!--耳机音响-->
+						<ul class="right">
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/111.jpg"/>
+								</a>
+								<a href="" class="name">小米网络音箱</a>
+								<b>399元</b>
+								<p>0人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/112.jpg"/>
+								</a>
+								<a href="" class="name">小米胶囊耳机</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+								<span class="top-tips">有赠品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/113.jpg"/>
+								</a>
+								<a href="" class="name">小米活塞耳机 基础版</a>
+								<b>29元</b>
+								<p>7.3万人评价</p>
+								<span class="top-tips">新品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/114.jpg"/>
+								</a>
+								<a href="" class="name">小米随身蓝牙音箱</a>
+								<b>69元</b>
+								<p>1.1万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/115.jpg"/>
+								</a>
+								<a href="" class="name">小米小钢炮蓝牙音箱2</a>
+								<b>129元</b>
+								<p>1.6万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/116.jpg"/>
+								</a>
+								<a href="" class="name">方盒子音箱</a>
+								<b>99元</b>
+								<p>1.5万人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/117.jpg"/>
+								</a>
+								<a href="" class="name">睿米车载蓝牙播放器</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+							</li>
+							<li class="last">
+								<div class="goods">
+									<h3><a href="javascript:;">小米蓝牙音箱</a></h3>
+									<span class="price">199</span>
+									<a href="" class="see">
+										<img src="img/bannertap/television/118.jpg"/>
+									</a>
+								</div>
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
+							</li>
+						</ul>
+						<!--电源-->
+						<ul class="right">
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/121.jpg"/>
+								</a>
+								<a href="" class="name">小米网络音箱</a>
+								<b>399元</b>
+								<p>0人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/122.jpg"/>
+								</a>
+								<a href="" class="name">小米胶囊耳机</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+								<span class="top-tips">有赠品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/123.jpg"/>
+								</a>
+								<a href="" class="name">小米活塞耳机 基础版</a>
+								<b>29元</b>
+								<p>7.3万人评价</p>
+								<span class="top-tips">新品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/124.jpg"/>
+								</a>
+								<a href="" class="name">小米随身蓝牙音箱</a>
+								<b>69元</b>
+								<p>1.1万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/125.jpg"/>
+								</a>
+								<a href="" class="name">小米小钢炮蓝牙音箱2</a>
+								<b>129元</b>
+								<p>1.6万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/126.jpg"/>
+								</a>
+								<a href="" class="name">方盒子音箱</a>
+								<b>99元</b>
+								<p>1.5万人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/127.jpg"/>
+								</a>
+								<a href="" class="name">睿米车载蓝牙播放器</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+							</li>
+							<li class="last">
+								<div class="goods">
+									<h3><a href="javascript:;">小米蓝牙音箱</a></h3>
+									<span class="price">199</span>
+									<a href="" class="see">
+										<img src="img/bannertap/television/128.jpg"/>
+									</a>
+								</div>
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
+							</li>
+						</ul>
+						<!--电池 储存卡-->
+						<ul class="right">
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/131.jpg"/>
+								</a>
+								<a href="" class="name">小米网络音箱</a>
+								<b>399元</b>
+								<p>0人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/132.jpg"/>
+								</a>
+								<a href="" class="name">小米胶囊耳机</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+								<span class="top-tips">有赠品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/133.jpg"/>
+								</a>
+								<a href="" class="name">小米活塞耳机 基础版</a>
+								<b>29元</b>
+								<p>7.3万人评价</p>
+								<span class="top-tips">新品</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/134.jpg"/>
+								</a>
+								<a href="" class="name">小米随身蓝牙音箱</a>
+								<b>69元</b>
+								<p>1.1万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/135.jpg"/>
+								</a>
+								<a href="" class="name">小米小钢炮蓝牙音箱2</a>
+								<b>129元</b>
+								<p>1.6万人评价</p>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/136.jpg"/>
+								</a>
+								<a href="" class="name">方盒子音箱</a>
+								<b>99元</b>
+								<p>1.5万人评价</p>
+								<span class="top-tips">免邮费</span>
+							</li>
+							<li>
+								<a href="" class="display">
+									<img src="img/bannertap/television/137.jpg"/>
+								</a>
+								<a href="" class="name">睿米车载蓝牙播放器</a>
+								<b>69元</b>
+								<p>2万人评价</p>
+							</li>
+							<li class="last">
+								<div class="goods">
+									<h3><a href="javascript:;">小米蓝牙音箱</a></h3>
+									<span class="price">199</span>
+									<a href="" class="see">
+										<img src="img/bannertap/television/138.jpg"/>
+									</a>
+								</div>
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -783,6 +1749,7 @@
 								<a href="" class="name">红米手机3标准版 红米3S 标准钢化玻璃膜(0.33mm)</a>
 								<b>19元</b>
 								<p>4370人评价</p>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -798,7 +1765,7 @@
 								</a>
 								<a href="" class="name">红米Note4 标准高透贴膜</a>
 								<b>19元</b>
-								<p>2900人评价</p>
+								<p>2900人评价</p><span class="top-tips">有赠品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -807,6 +1774,7 @@
 								<a href="" class="name">小米5s 标准高透贴膜</a>
 								<b>19元</b>
 								<p>1913人评价</p>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -840,7 +1808,11 @@
 										<img src="img/parts/T1t2K_B4L_1RXrhCrK.jpg"/>
 									</a>
 								</div>
-								<div class="view"></div>
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -874,6 +1846,8 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -888,6 +1862,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -902,6 +1877,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -916,6 +1892,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">新品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -930,6 +1907,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">有赠品</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -944,6 +1922,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li>
 								<a href="" class="display">
@@ -958,6 +1937,7 @@
 									</span>
 									<span class="author"> 来自于 36679699 的评价 </span>
 								</a>
+								<span class="top-tips">免邮费</span>
 							</li>
 							<li class="last">
 								<div class="goods">
@@ -967,7 +1947,11 @@
 										<img src="img/around/8.jpg"/>
 									</a>
 								</div>
-								<div class="view"></div>
+								<div class="view">
+									<a href="" class="iconfont icon-xiangyou2"></a>
+									<h3>浏览更多</h3>
+									<p>热门</p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -976,7 +1960,10 @@
 				<div class="main-recommend">
 					<div class="title-w">
 						<h3 class="title">为您推荐</h3>
-						<div class="more"></div>
+						<div class="more">
+							<a href="javascript:;" class="iconfont icon-xiangzuo3 com-lef current"></a>
+							<a href="javascript:;" class="iconfont icon-youbian-copy com-rt"></a>
+						</div>
 					</div>
 					<div class="mn-rcd-content">
 						<ul class="rcd-wrap">
@@ -1106,11 +2093,16 @@
 						<h3 class="title">内容</h3>
 					</div>
 					<ul class="mn-oth-wrap">
-						<li class="mn-oth-list">
+						<li class="mn-oth-list books">
 							<!--图书-->
+							<a class="arr-small-lef iconfont icon-xiangzuo3 default">
+							</a>
+							<a class="arr-small-rt iconfont icon-youbian-copy">
+							</a>
+							<div class="oth-dot-wrap"></div>
 							<h4 class="theme">图书</h4>
 							<ol class="mn-oth-inner">
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">哈利·波特与被诅咒的孩子</b>
 									<p class="brief">
 										<a href="javascript:;">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</a>
@@ -1120,7 +2112,7 @@
 									</span>
 									<img src="img/other/1.png" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">好吗好的</b>
 									<p class="brief">
 										<a href="javascript:;">畅销作家大冰2016年新书！讲给你听，好吗好的！</a>
@@ -1130,7 +2122,7 @@
 									</span>
 									<img src="img/other/2.png" alt="" class="visual" />
 								</li>
-								<li class="in-more">
+								<li class="in-more to-obj-tap">
 									<p class="desc">海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！</p>
 									<a href="" class="btn-more">前往多看阅读</a>
 									<img src="img/other/more-duokan.jpg" alt="" class="in-logo" />
@@ -1138,10 +2130,15 @@
 							</ol>
 						</li>
 						<!--MIUI-->
-						<li class="mn-oth-list">
+						<li class="mn-oth-list theme">
+							<a class="arr-small-lef iconfont icon-xiangzuo3 default">
+							</a>
+							<a class="arr-small-rt iconfont icon-youbian-copy">
+							</a>
+							<div class="oth-dot-wrap"></div>
 							<h4 class="theme">MIUI 主题</h4>
 							<ol class="mn-oth-inner">
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">剑侠情缘网络版叁</b>
 									<p class="brief">
 										<a href="javascript:;">首款官方主题，经典再现，十二门派锁屏通通收入囊中</a>
@@ -1151,7 +2148,7 @@
 									</span>
 									<img src="img/other/sword.jpg" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">小米MIX</b>
 									<p class="brief">
 										<a href="javascript:;">小米MIX官方定制主题 未来黑科技 现在就来！</a>
@@ -1161,7 +2158,7 @@
 									</span>
 									<img src="img/other/98a7c941-e8f6-4f28-9e07-e5ab700f7a2d.jpg" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">小米Note 2</b>
 									<p class="brief">
 										<a href="javascript:;">小米Note 2官方定制主题 超多侧边栏功能 等你发现</a>
@@ -1171,18 +2168,23 @@
 									</span>
 									<img src="img/other/not2.jpg" alt="" class="visual" />
 								</li>
-								<li class="in-more">
+								<li class="in-more to-obj-tap">
 									<p class="desc">海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！</p>
-									<a href="" class="btn-more">前往多看阅读</a>
+									<a href="" class="btn-more">前往MIUI主体市场</a>
 									<img src="img/other/miui.jpg" alt="" class="in-logo" />
 								</li>
 							</ol>
 						</li>
 						<!--game-->
-						<li class="mn-oth-list">
+						<li class="mn-oth-list game">
+							<a class="arr-small-lef iconfont icon-xiangzuo3 default">
+							</a>
+							<a class="arr-small-rt iconfont icon-youbian-copy">
+							</a>
+							<div class="oth-dot-wrap"></div>
 							<h4 class="theme">游戏</h4>
 							<ol class="mn-oth-inner">
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">剑侠世界</b>
 									<p class="brief">
 										<a href="javascript:;">一生不容错过的浪漫武侠！！</a>
@@ -1192,7 +2194,7 @@
 									</span>
 									<img src="img/other/sk.jpg" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">米柚手游模拟器</b>
 									<p class="brief">
 										<a href="javascript:;">在电脑上玩遍小米所有手游</a>
@@ -1202,7 +2204,7 @@
 									</span>
 									<img src="img/other/x.png" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">老九门</b>
 									<p class="brief">
 										<a href="javascript:;">九门恩怨，盗墓笔记前传上线</a>
@@ -1212,18 +2214,23 @@
 									</span>
 									<img src="img/other/33.jpg" alt="" class="visual" />
 								</li>
-								<li class="in-more">
+								<li class="in-more to-obj-tap">
 									<p class="desc">海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！</p>
-									<a href="" class="btn-more">前往多看阅读</a>
+									<a href="" class="btn-more">前往小米游戏中心</a>
 									<img src="img/other/more-game.jpg" alt="" class="in-logo" />
 								</li>
 							</ol>
 						</li>
 						<!--app-->
-						<li class="mn-oth-list">
+						<li class="mn-oth-list app">
+							<a class="arr-small-lef iconfont icon-xiangzuo3">
+							</a>
+							<a class="arr-small-rt iconfont icon-youbian-copy">
+							</a>
+							<div class="oth-dot-wrap"></div>
 							<h4 class="theme">应用</h4>
 							<ol class="mn-oth-inner">
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">2015年度应用</b>
 									<p class="brief">
 										<a href="javascript:;">2015年度应用</a>
@@ -1233,7 +2240,7 @@
 									</span>
 									<img src="img/other/T1eaxgB4Ev1R4cSCrK.png" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">2015年度应用</b>
 									<p class="brief">
 										<a href="javascript:;">2015年度应用</a>
@@ -1243,7 +2250,7 @@
 									</span>
 									<img src="img/other/T1YyJgBCYv1R4cSCrK.png" alt="" class="visual" />
 								</li>
-								<li class="books in-item">
+								<li class="books in-item to-obj-tap">
 									<b class="tit">小米应用</b>
 									<p class="brief">
 										<a href="javascript:;">小米出品 必属精品</a>
@@ -1253,9 +2260,9 @@
 									</span>
 									<img src="img/other/T15VZvB5Kv1R4cSCrK.png" alt="" class="visual" />
 								</li>
-								<li class="in-more">
+								<li class="in-more to-obj-tap">
 									<p class="desc">海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！</p>
-									<a href="" class="btn-more">前往多看阅读</a>
+									<a href="" class="btn-more">前往小米应用商店</a>
 									<img src="img/other/more-app.jpg" alt="" class="in-logo" />
 								</li>
 							</ol>
@@ -1273,21 +2280,33 @@
 							<img src="img/foot/1.jpg"/>
 							<h3><a href="javascript:;">梁朝伟讲述小米Note2 的冰山理论</a></h3>
 							<p>第一眼看到的美，只是全部创作的八分之一</p>
+							<span class="icon-wrap">
+								<i class="iconfont icon-triangle-r"></i>
+							</span>
 						</li>
 						<li class="mn-vd-item">
 							<img src="img/foot/2.jpg"/>
 							<h3><a href="javascript:;">小米MIX 概念手机背后的故事</a></h3>
 							<p>雷总亲自讲述小米MIX 的诞生</p>
+							<span class="icon-wrap">
+								<i class="iconfont icon-triangle-r"></i>
+							</span>
 						</li>
 						<li class="mn-vd-item">
 							<img src="img/foot/3.jpg"/>
 							<h3><a href="javascript:;">一面科技，一面艺术</a></h3>
 							<p>梁朝伟讲述双面人生</p>
+							<span class="icon-wrap">
+								<i class="iconfont icon-triangle-r"></i>
+							</span>
 						</li>
 						<li class="mn-vd-item">
 							<img src="img/foot/4.jpg"/>
 							<h3><a href="javascript:;">菲利普·斯塔克的设计哲学</a></h3>
 							<p>最负盛名的设计大师，物质越少人性越多</p>
+							<span class="icon-wrap">
+								<i class="iconfont icon-triangle-r"></i>
+							</span>
 						</li>
 					</ul>
 				</div>
@@ -1300,26 +2319,31 @@
 				<ul class="ft-service">
 					<li class="ft-sv-item">
 						<a href="javascript:;">
+							<i class="iconfont icon-buoumaotubiao46"></i>
 							预约维修服务
 						</a>
 					</li>
 					<li class="ft-sv-item">
 						<a href="javascript:;">
+							<i class="iconfont icon-7"></i>
 							7天无理由退货
 						</a>
 					</li>
 					<li class="ft-sv-item">
 						<a href="javascript:;">
+							<i class="iconfont icon-15"></i>
 							15天免费换货
 						</a>
 					</li>
 					<li class="ft-sv-item">
 						<a href="javascript:;">
+							<i class="iconfont icon-liwu"></i>
 							满150元包邮
 						</a>
 					</li>
 					<li class="ft-sv-item">
 						<a href="javascript:;">
+							<i class="iconfont icon-dingwei"></i>
 							520余家售后网点
 						</a>
 					</li>
@@ -1364,7 +2388,9 @@
 					<div class="col-contact">
 						<h3 class="phone">400-100-5678</h3>
 						<p class="time">周一至周日 8:00-18:00<br>（仅收市话费）</p>
-						<a href="" class="custom">24小时在线客服</a>
+						<a href="" class="custom">
+							<i class="iconfont icon-xinxi"></i>
+							24小时在线客服</a>
 					</div>
 					
 				</div>

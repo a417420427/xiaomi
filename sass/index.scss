@@ -31,6 +31,9 @@ $width:1226px;
         height: 40px;
         a{
             color: $bgC;
+            &:hover{
+                color: #fff;
+            }
         }
         span{
             color: #424242;
@@ -38,23 +41,47 @@ $width:1226px;
         }
     }
     .tp-cart{
+        position: relative;
+        z-index: 10;
         float: right;
         width: 120px;
         height: 40px;
         background: #424242;
-        text-align: center;
-        a{
-            color:$bgC;
+        color: #b0b0b0;
+        &:hover{
+            color: #f60;
+            background: #fff;
         }
-        span{
-            color: #424242;
+        text-align: center;
+        i{
+            
+        }
+        b{
             padding: 0 6px;
         }
+        .tp-ct-inner{
+            display: none;
+            width: 316px;
+            height: 0;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            color: #333;
+            background: #fff;
+            line-height: 0;
+            overflow: hidden;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+            transition: all .2s;
+        }
+       
     }
     .tp-info{
         float: right;
          a{
             color:$bgC;
+            &:hover{
+                color: #fff;
+            }
         }
         span{
             color: #424242;
@@ -95,25 +122,78 @@ $width:1226px;
         float: right;
         height: 50px;
         @include clearfix ;
-        .hd-sch-ipt{
+        .text-wrap{
             float: left;
-            height: 46px;
-            width: 243px;
-            font-size: 14px;
-            line-height: 46px;
-            border: 1px solid #e0e0e0;
-            outline: none;
+            position: relative;
+            @include clearfix;
+            span.push{
+                display: inline-block;
+                position: absolute;
+                line-height: 18px;
+                padding: 0 5px;
+                background: #e0e0e0;
+                cursor: pointer;
+                top: 16px;
+                right: 8px;
+                &:hover{
+                    color: #fff;
+                    background: #f60;
+                }
+            }
+            span.pop{
+                @extend span.push;
+                right: 76px;
+            }
+            .hd-sch-ipt{
+                float: left;
+                height: 46px;
+                width: 243px;
+                font-size: 14px;
+                line-height: 46px;
+                border: 1px solid #e0e0e0;
+                outline: none;
+            }
         }
-        .hd-sch-btn{
+        .btn-wrap{
             float: left;
-            height: 50px;
-            width: 50px;
-            margin-left: -1px;
-            background: #fff;
+            position: relative;
+            @include clearfix;
             cursor: pointer;
-            outline: none;
-            border: 1px solid #e0e0e0;
+            background: #fff;
+            &:hover{
+            background: #f60;
+            }
+            &:hover i.iconfont{
+                color: #fff;
+            }
+            &:hover .hd-sch-btn{
+                border-color: #f60;
+            }
+            .hd-sch-btn{
+                float: left;
+                height: 50px;
+                width: 50px;
+                margin-left: -1px;
+                background: transparent;
+                cursor: pointer;
+                outline: none;
+                border: 1px solid #e0e0e0;
+            }
+            i.iconfont{
+                position: absolute;
+                z-index: 1;
+                left: 12px;
+                top: 12px;
+                &:before{
+                    font-size: 22px;
+                }
+                
+            }
+        
         }
+            
+            
+        
     }
 }
 
@@ -129,7 +209,6 @@ $width:1226px;
         padding: 20px 0;
         background: rgba(0,0,0,0.6);
         .sd-nav-item{
-            position: relative;
             height: 42px;
             line-height: 42px;
             cursor: pointer;
@@ -157,6 +236,7 @@ $width:1226px;
             .ban-carousel-list{
                 width: 1000%;
                 height: 100%;
+                cursor: pointer;
                 @include clearfix;
                 .ban-carousel-item{
                     float: left;
@@ -239,6 +319,26 @@ $width:1226px;
             }
             .more{
                 float: right;
+                @include clearfix;
+                a.star-lef{
+                    float: left;
+                    width: 24px;
+                    height: 16px;
+                    padding: 3px 5px;
+                    border: 1px solid #e0e0e0;
+                    &:before{
+                        font-size: 26px;
+                        position: relative;
+                        top: -7px;
+                    }
+                }
+                a.star-rt{
+                    @extend a.star-lef;
+                }
+                a.iconfont.current{
+                    color: #e0e0e0;
+                    cursor: pointer;
+                }
             }
             
         }
@@ -451,6 +551,27 @@ $width:1226px;
             }
             .more{
                 float: right;
+                a.all{
+                    &:hover{
+                        color: #f60;
+                    }
+                    &:hover i.iconfont{
+                        color: #f60;
+                    }
+                    display: block;
+                    font-size: 16px;
+                    line-height: 58px;
+                    i.iconfont{
+                        color: #b0b0b0;
+                        padding-left: 5px;
+                        &:before{
+                            font-size: 20px;
+                            position: relative;
+                            top: 3px;
+                        }
+                        
+                    }
+                }
             }
         }
         .mn-at-content{
@@ -495,6 +616,7 @@ $width:1226px;
     }
     //match 
     .main-match{
+        position: relative;
         margin-top: 10px;
         .title-w{
             @include clearfix;
@@ -503,6 +625,18 @@ $width:1226px;
             }
             .more{
                 float: right;
+                @include clearfix;
+                .cat-item{
+                    float: left;
+                    line-height: 28px;
+                    font-size: 16px;
+                    margin: 10px 0 15px 20px;
+                    
+                }
+                .cat-item.current{
+                    color: #f60;
+                    border-bottom: 2px solid #f60;
+                }
             }
         }
         .mn-mat-content{
@@ -530,7 +664,9 @@ $width:1226px;
                 }
             }
             ul.right{
-                float: left;
+                position: absolute;
+                display: none;
+                left: 234px;
                 @include clearfix;
                 width: 992px;
                 li{
@@ -587,8 +723,35 @@ $width:1226px;
                         @include last;
                         @include box;
                        position: relative;
+                       text-align: left;
+                       a.iconfont{
+                            position: absolute;
+                            color: #f60;
+                            right: 30px;
+                            top:35px;
+                            &:before{
+                                font-size: 55px;
+                             
+                            }
+                       }
+                        h3{
+                          padding-top: 50px;
+                          padding-left: 30px;
+                          font-size: 18px;
+                       }
+                       p{
+                           padding-left: 30px;
+                           font-size: 12px;
+                           color: #b0b0b0;
+                           line-height: 18px;
+                           
+                       }
                     }
                 }
+            }
+            
+            ul.right.current{
+                display: block;
             }
         }
     }
@@ -685,6 +848,29 @@ $width:1226px;
                         @include last;
                         @include box;
                        position: relative;
+                       text-align: left;
+                       a.iconfont{
+                            position: absolute;
+                            color: #f60;
+                            right: 30px;
+                            top:35px;
+                            &:before{
+                                font-size: 55px;
+                             
+                            }
+                       }
+                        h3{
+                          padding-top: 50px;
+                          padding-left: 30px;
+                          font-size: 18px;
+                       }
+                       p{
+                           padding-left: 30px;
+                           font-size: 12px;
+                           color: #b0b0b0;
+                           line-height: 18px;
+                           
+                       }
                     }
                 }
             }
@@ -787,6 +973,29 @@ $width:1226px;
                         @include last;
                        @include box;
                        position: relative;
+                       text-align: left;
+                       a.iconfont{
+                            position: absolute;
+                            color: #f60;
+                            right: 30px;
+                            top:35px;
+                            &:before{
+                                font-size: 55px;
+                             
+                            }
+                       }
+                        h3{
+                          padding-top: 50px;
+                          padding-left: 30px;
+                          font-size: 18px;
+                       }
+                       p{
+                           padding-left: 30px;
+                           font-size: 12px;
+                           color: #b0b0b0;
+                           line-height: 18px;
+                           
+                       }
                     }
                 }
             }
@@ -802,6 +1011,26 @@ $width:1226px;
             }
             .more{
                 float: right;
+                a.com-lef{
+                    float: left;
+                    margin-top: 17px;
+                    width: 24px;
+                    height: 16px;
+                    padding: 3px 5px;
+                    border: 1px solid #e0e0e0;
+                    &:before{
+                        font-size: 26px;
+                        position: relative;
+                        top: -7px;
+                    }
+                }
+                a.com-rt{
+                    @extend a.com-lef;
+                }
+                a.iconfont.current{
+                    color: #e0e0e0;
+                    cursor: pointer;
+                }
             }
         }
         .mn-rcd-content{
@@ -871,6 +1100,7 @@ $width:1226px;
                     display: block;
                     width: 296px;
                     height: 220px;
+                    cursor: pointer;
                 }
                 .text{
                     padding: 28px 28px 0;
@@ -915,6 +1145,50 @@ $width:1226px;
         .mn-oth-wrap{
             width: 110%;
             @include clearfix;
+            .mn-oth-list:nth-child(1){
+                border-top-color: #f60;
+            }
+            .mn-oth-list:nth-child(1) a.btn-more{
+                color: #f60;
+                border: 1px solid #f60;
+                &:hover{
+                    color: #fff;
+                    background: #f60;
+                }
+            }
+            .mn-oth-list:nth-child(2){
+                border-top-color: green;
+            }
+            .mn-oth-list:nth-child(2) a.btn-more{
+                color: green;
+                border: 1px solid green;
+                &:hover{
+                    color: #fff;
+                    background: green;
+                }
+            }
+            .mn-oth-list:nth-child(3){
+                border-top-color: crimson;
+            }
+            .mn-oth-list:nth-child(3) a.btn-more{
+                color: crimson;
+                border: 1px solid crimson;
+                &:hover{
+                    color: #fff;
+                    background: crimson;
+                }
+            }
+            .mn-oth-list:nth-child(4){
+                border-top-color: blue;
+            }
+            .mn-oth-list:nth-child(4) a.btn-more{
+                color: blue;
+                border: 1px solid blue;
+                &:hover{
+                    color: #fff;
+                    background: blue;
+                }
+            }
             .mn-oth-list{
                 position: relative;
                 @include box;
@@ -926,15 +1200,74 @@ $width:1226px;
                 margin-right: 14px;
                 text-align: center;
                 background: #fff;
-                border: 1px solid transparent;
+                border-top: 1px solid transparent;
                 overflow: hidden;
+                &:hover a.iconfont{
+                    background: #e0e0e0;
+                }
+                a.iconfont{
+                    display: block;
+                    margin-top: -20px;
+                    position: absolute;
+                    width: 20px;
+                    height: 48px;
+                    text-align: center;
+                    top: 50%;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(66,66,66,0.6);
+                    }
+                    &:before{
+                        font-size: 40px;
+                        position: relative;
+                        left: -9px;
+                        top: 2px;
+                        color: #fff;
+                    }
+                }
+                a.iconfont.default{
+                    cursor: default;
+                }
+                a.iconfont.arr-small-lef{
+                    left: -1px;
+                }
+                a.iconfont.arr-small-rt{
+                    right: -1px;
+                }
+                .oth-dot-wrap{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 24px;
+                    left: 0;
+                    text-align: center;
+                    .item-wrap{
+                        display: inline-block;
+                        padding: 5px 3px;
+                        cursor: pointer;
+                        &:hover .oth-dot-item{
+                            background: #f60;
+                        }
+                    }
+                    span.oth-dot-item{
+                        display: inline-block;
+                        margin: 0 10px;
+                        padding: 3px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background: #b0b0b0;
+                    }
+                    span.oth-dot-item.current{
+                        background: none;
+                        border: 2px solid #f60;
+                    }
+                }
                 .theme{
                     font-size: 16px;
                     line-height: 24px;
                     margin-bottom: 18px;
                 }
                 .mn-oth-inner{
-                    width: 300%;
+                    width: 400%;
                     @include clearfix;
                 }
             }
@@ -980,7 +1313,6 @@ $width:1226px;
                     height: 28px;
                     line-height: 28px;
                     margin: 0 auto;
-                    border: 1px solid transparent;
                 }
                 img.in-logo{
                    @extend img.visual;
@@ -1013,11 +1345,38 @@ $width:1226px;
                 height: 285px;
                 text-align: center;
                 background: #fff;
+                span.icon-wrap{
+                    position: absolute;
+                    display: block;
+                    left: 15px;
+                    top: 139px;
+                    width: 30px;
+                    height: 19px;
+                    border-radius: 9px;
+                    background: rgba(0,0,0,0.3);
+                    border: 2px solid #fff;
+                    cursor: pointer;
+                    &:hover{
+                        background: #f60;
+                        border-color: #f60;
+                    }
+                     i.iconfont{
+                        &:before{
+                            font-size: 19px;
+                            color: #fff;
+                            position: relative;
+                            top: -4px;
+                            left: 1px;
+                        }
+                    }
+                }
+                   
                 img{
                     display: block;
                     width: 100%;
                     height: 180px;
                     margin-bottom: 28px;
+                    cursor: pointer;
                 }
                 h3{
                     font-size: 14px;
@@ -1071,8 +1430,17 @@ $width:1226px;
                 &:hover{
                     color: #f60;
                 }
+                i.iconfont{
+                    &:before{
+                        position: relative;
+                        font-size: 25px;
+                        left: -3px;
+                        top: 2px;
+                    }
+                }
             }
         }
+        
     }
     .foot-links{
         padding: 40px 0;
@@ -1125,6 +1493,14 @@ $width:1226px;
                 &:hover{
                     color: #fff;
                     background: #f60;
+                }
+                i.iconfont{
+                    position: relative;
+                    top: 0;
+                    left:0;
+                    &:before{
+                        font-size: 14px;
+                    }
                 }
             }
         }
