@@ -1,0 +1,295 @@
+body, html {
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  color: #333; }
+
+body, html, h2, h3, h4, ul, ol, li, p, a, img, b {
+  margin: 0;
+  padding: 0;
+  font-weight: 500; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+.head {
+  height: 110px;
+  background: url(../img/headbg.jpg) repeat-x left bottom; }
+  .head .container {
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto; }
+    .head .container:after {
+      content: '';
+      display: table;
+      height: 0;
+      clear: both; }
+    .head .container .hd-left {
+      float: left;
+      padding-top: 20px; }
+      .head .container .hd-left:after {
+        content: '';
+        display: table;
+        height: 0;
+        clear: both; }
+      .head .container .hd-left .logo {
+        float: left;
+        width: 60px;
+        height: 60px;
+        padding-right: 30px; }
+      .head .container .hd-left .welcom {
+        float: left;
+        margin-top: 13px;
+        font-size: 18px;
+        line-height: 34px;
+        padding-left: 30px;
+        border-left: 1px solid #bbbbbb; }
+    .head .container .hd-right {
+      float: right;
+      padding-top: 50px;
+      font-size: 16px;
+      line-height: 30px; }
+      .head .container .hd-right span.has {
+        color: #b0b0b0; }
+
+.main-reg {
+  width: 100%;
+  margin-top: 40px; }
+  .main-reg .container {
+    width: 70%;
+    margin: 0 auto; }
+  .main-reg .content {
+    width: 830px;
+    margin: 0 auto; }
+    .main-reg .content:after {
+      content: '';
+      display: table;
+      height: 0;
+      clear: both; }
+
+#register {
+  float: left;
+  width: 400px; }
+  #register .form-item {
+    position: relative;
+    z-index: 1;
+    width: 398px;
+    height: 52px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: transparent; }
+    #register .form-item:after {
+      content: '';
+      display: table;
+      height: 0;
+      clear: both; }
+    #register .form-item label {
+      float: left;
+      width: 90px;
+      line-height: 52px;
+      padding: 0 10px;
+      text-align: center; }
+    #register .form-item input {
+      float: left;
+      border: none;
+      outline: none;
+      line-height: 20px;
+      background: transparent;
+      padding: 15px 0 15px 20px; }
+    #register .form-item .inner {
+      position: absolute;
+      z-index: -1;
+      display: block;
+      left: 130px;
+      top: 15px;
+      line-height: 20px;
+      color: #b0b0b0; }
+    #register .form-item .correct {
+      display: none;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: 20px;
+      top: 20px;
+      background: url(../img/1000000.png) no-repeat;
+      background-position: 0 -117px; }
+    #register .form-item .correct.current {
+      display: block; }
+    #register .form-item .phone-choose {
+      float: right;
+      width: 15px;
+      height: 15px;
+      margin-right: 13px;
+      margin-top: 16px;
+      background: url(../img/1000000.png) no-repeat;
+      background-position: -2px -151px; }
+  #register .form-item.form-phone label {
+    width: 104px;
+    border-right: 1px solid #ddd;
+    padding-right: 0; }
+  #register .form-item.form-phone .mail-veri {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: -18px;
+    line-height: 18px; }
+    #register .form-item.form-phone .mail-veri a {
+      color: dodgerblue; }
+  #register .form-indentify a.code {
+    position: absolute;
+    display: block;
+    right: 3px;
+    top: 3px;
+    padding: 10px 10px;
+    width: 90px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 5px; }
+  #register .form-phonecode .codeitem {
+    position: absolute;
+    display: block;
+    top: 3px;
+    right: 3px;
+    width: 110px;
+    height: 46px;
+    font-size: 14px;
+    background: #f2f2f2;
+    text-align: center;
+    line-height: 46px; }
+  #register .input-tips {
+    width: 100%;
+    height: 27px;
+    padding-top: 5px;
+    line-height: 27px; }
+    #register .input-tips:after {
+      content: '';
+      display: table;
+      height: 0;
+      clear: both; }
+    #register .input-tips .tips {
+      color: #b0b0b0;
+      display: none; }
+    #register .input-tips .i-def, #register .input-tips .ic {
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: middle;
+      margin-top: -2px;
+      width: 16px;
+      height: 16px;
+      background: url(../img/1000000.png) no-repeat;
+      background-position: 0 -100px; }
+    #register .input-tips .error {
+      color: #e22;
+      display: none; }
+    #register .input-tips .error.current, #register .input-tips .tips.current {
+      display: block; }
+    #register .input-tips .ic {
+      background-position: -17px -100px; }
+  #register .form-agree {
+    width: 100%;
+    height: 21px;
+    line-height: 21px; }
+    #register .form-agree:after {
+      content: '';
+      display: table;
+      height: 0;
+      clear: both; }
+    #register .form-agree input {
+      margin: 0;
+      float: left;
+      width: 18px;
+      height: 20px; }
+    #register .form-agree span {
+      float: left;
+      padding-left: 10px;
+      line-height: 21px; }
+      #register .form-agree span a {
+        color: #0079F3; }
+  #register .form-btn, #register .form-btn .btn-register {
+    position: relative;
+    width: 400px;
+    height: 54px;
+    background: #e22;
+    cursor: pointer; }
+    #register .form-btn .btn-register {
+      position: relative;
+      z-index: 1;
+      border: none;
+      background: transparent; }
+    #register .form-btn .fake {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      line-height: 54px; }
+
+.reg-other {
+  float: left;
+  width: 213px;
+  margin-left: 104px;
+  padding-left: 90px;
+  height: 605px;
+  text-align: center;
+  border-left: 1px solid #e6e6e6; }
+  .reg-other .top {
+    display: block;
+    margin: 0 auto; }
+  .reg-other .contact {
+    margin: 50px 0 0 30px; }
+    .reg-other .contact .global, .reg-other .contact .company {
+      display: block;
+      width: 125px;
+      height: 30px;
+      padding-left: 45px;
+      font-size: 14px; }
+      .reg-other .contact .global .icon-c, .reg-other .contact .company .icon-c {
+        margin-left: -45px;
+        width: 30px;
+        height: 30px;
+        float: left;
+        background: url(../img/1000000.png) no-repeat; }
+    .reg-other .contact .global .icon-c {
+      background-position: -50px -50px; }
+    .reg-other .contact .global {
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+      padding-top: 30px; }
+    .reg-other .contact .company .icon-c {
+      background-position: 0 -50px; }
+
+.foot {
+  width: 100%;
+  margin-top: 50px; }
+  .foot .container {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 1000px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center; }
+  .foot .links {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    line-height: 22px; }
+    .foot .links a {
+      color: #999; }
+    .foot .links span {
+      padding: 0 5px;
+      color: #999; }
+  .foot .copyright {
+    padding-bottom: 40px;
+    color: #999; }
+
+/*# sourceMappingURL=register.css.map */

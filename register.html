@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<!--head area-->
+		<div class="head">
+			<div class="container">
+				<div class="hd-left">
+					<a href="javascript:;" class="logo">
+						<img src="img/logo.png" alt="" />
+					</a>
+					<span class="welcom">欢 迎 注 册</span>
+				</div>
+				<div class="hd-right">
+					<span class="has">已有账号 </span>
+					<a href="login.html" class="login">请登录</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--main-content-->
+		<div class="main-reg">
+			<div class="container">
+				<div class="content">
+					<form action="php/mysql.php" id="register">
+						<!--user-->
+						<div class="form-user form-item">
+							<label>用户名</label>
+							<input formmethod="get" type="text" class="check-item" id="user-al" placeholder="" name="user" />
+							<span class="inner">您的账号和登录名</span>
+							<i class="correct"></i>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符</span>
+							<span class="error"><i class="ic"></i>请输入用户名</span>
+						</div>
+						<!--passport-->
+						<div class="form-passport form-item">
+							<label>设置密码</label>
+							<input formmethod="get" type="text" class="check-item" placeholder="" name="pass"/>
+							<span class="inner">请建议至少使用两种字符组合</span>
+							<i class="correct"></i>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符</span>
+							<span class="error"><i class="ic"></i>请输入密码</span>
+						</div>
+						<!--confirm pass-->
+						<div class="form-confirm form-item">
+							<label>确认密码</label>
+							<input type="text" class="check-item" placeholder="" />
+							<span class="inner">请再次输入密码</span>
+							<i class="correct"></i>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>请再次输入密码</span>
+							<span class="error"><i class="ic"></i>请再次输入密码</span>
+						</div>
+						<!--phone-->
+						<div class="form-phone form-item">
+							<label>中国 + 86
+								<a href="javascript:;" class="phone-choose">
+								</a>
+							</label>
+							
+							<input formmethod="get" type="text" class="check-item" placeholder="" name="phone" />
+							<span class="inner">建议使用常用手机</span>
+							<i class="correct"></i>
+							<span class="mail-veri">或
+								<a href="javascript:;">邮箱验证</a>
+							</span>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>完成验证后，可以使用该手机登录和找回密码</span>
+							<span class="error"><i class="ic"></i>请输入验证码</span>
+						</div>
+						<!--indentify code-->
+						<div class="form-indentify form-item">
+							<label>验证码</label>
+							<input type="text" class="check-item" placeholder="" />
+							<span class="inner">请输入验证码</span>
+							<a href="javascript:;" class="code">abcs</a>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>看不清楚？点击图片更换验证码</span>
+							<span class="error"><i class="ic"></i>请输入验证码</span>
+						</div>
+						<!--phone indentify code-->
+						<div class="form-phonecode form-item">
+							<label>手机验证码</label>
+							<input type="text" class="check-item" placeholder="" />
+							<span class="inner">请输入验证码</span>
+							<a href="javascript:;" class="codeitem">获取验证码</a>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>看不清楚？点击图片更换验证码</span>
+							<span class="error"><i class="ic"></i>请输入手机验证码</span>
+						</div>
+						<div class="form-agree">
+							<input type="checkbox" name="" id="" value="" />
+							<span>我已阅读并同意 <a href="javascript:;">《京东用户注册协议》</a></span>
+						</div>
+						<div class="input-tips">
+							<span class="tips"><i class="i-def"></i>看不清楚？点击图片更换验证码</span>
+							<span class="error"><i class="ic"></i></span>
+						</div>
+						<div class="form-btn">
+							<input type="submit" class="btn-register" value="" />
+							<span class="fake">提交注册</span>
+						</div>
+					</form>
+					<div class="reg-other">
+						<img src="img/phone.jpg" alt="" class="top" />
+						<div class="contact">
+							<a href="javascript:;" class="company">
+								<i class="icon-c"></i>
+								企业用户注册
+							</a>
+							<a href="javascript:;" class="global">
+								<i class="icon-c"></i>
+								INTERNATIONAL<br>CUSTOMERS
+							</a>
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="foot">
+			<div class="container">
+				<div class="links">
+					<a href="javascript:;">关于我们</a>
+					<span>|</span>
+					<a href="javascript:;">联系我们</a>
+					<span>|</span>
+					<a href="javascript:;">人才招聘</a>
+					<span>|</span>
+					<a href="javascript:;">商家入驻</a>
+					<span>|</span>
+					<a href="javascript:;">广告服务</a>
+					<span>|</span>
+					<a href="javascript:;">手机京东</a>
+					<span>|</span>
+					<a href="javascript:;">友情链接</a>
+					<span>|</span>
+					<a href="javascript:;">销售联盟</a>
+					<span>|</span>
+					<a href="javascript:;">京东社区</a>
+					<span>|</span>
+					<a href="javascript:;">京东公益</a>
+					<span>|</span>
+					<a href="javascript:;">English Site</a>
+				</div>
+				<p class="copyright">Copyright©2004-2016  京东JD.com 版权所有</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+</html>

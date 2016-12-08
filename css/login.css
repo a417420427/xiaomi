@@ -1,0 +1,134 @@
+body, html {
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  color: #333; }
+
+body, html, h2, h3, h4, ul, ol, li, p, a, img, b {
+  margin: 0;
+  padding: 0;
+  font-weight: 500; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+body {
+  width: 100%;
+  background: #f5f5f5;
+  color: #757575;
+  font-family: "microsoft yahei"; }
+
+.login-main {
+  width: 60%;
+  min-width: 800px;
+  margin: 0 auto 0;
+  background: #fff; }
+  .login-main img.logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+    margin: 0 auto; }
+  .login-main h3 {
+    font-size: 30px;
+    line-height: 60px;
+    margin: 22px 0;
+    color: #424242;
+    text-align: center; }
+
+#login {
+  padding-top: 10px; }
+  #login .wrap {
+    margin: 0 auto 15px;
+    width: 358px;
+    height: 48px;
+    border: 1px solid #e0e0e0; }
+    #login .wrap input {
+      width: 326px;
+      height: 22px;
+      line-height: 22px;
+      padding: 13px 15px;
+      border: none;
+      outline: none;
+      background: none; }
+    #login .wrap input.btn {
+      height: 48px;
+      width: 358px; }
+  #login .wrap.wrap-btn {
+    position: relative;
+    margin-top: 40px;
+    cursor: pointer;
+    background: #f60;
+    color: #fff;
+    border: none; }
+    #login .wrap.wrap-btn .fake {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 48px;
+      font-size: 14px;
+      text-align: center; }
+  #login .other {
+    position: relative;
+    width: 358px;
+    margin: 40px auto 0;
+    z-index: 1;
+    line-height: 31px;
+    text-align: center; }
+    #login .other span {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      background: #fff; }
+    #login .other .line {
+      display: block;
+      position: absolute;
+      z-index: 0;
+      top: 15px;
+      height: 1px;
+      width: 100%;
+      background: #e0e0e0; }
+  #login .links {
+    padding-top: 20px;
+    width: 358px;
+    margin: 0 auto;
+    text-align: center; }
+    #login .links a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #757575;
+      color: #fff; }
+      #login .links a:hover {
+        background: #0288d1; }
+      #login .links a i.iconfont:before {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 22px; }
+  #login .help {
+    width: 358px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center; }
+
+.foot {
+  text-align: center; }
+  .foot .problem {
+    line-height: 30px;
+    padding: 15px 0 10px; }
+  .foot p {
+    padding-bottom: 30px; }
+
+/*$user = $_GET['user'];
+$pass = $_GET['pass'];
+$phone = $_GET['phone'];*/
+
+/*# sourceMappingURL=login.css.map */

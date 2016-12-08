@@ -20,3 +20,11 @@ a{
     text-decoration: none;
     color: $color;
 }
+@mixin clear{
+    &:after{
+        content: '';
+        display: table;
+        height: 0;
+        clear: both;
+    }
+}
