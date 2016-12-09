@@ -168,6 +168,17 @@ $(function(){
 		}
 	}
 	banCaro.init();
+	//用户信息显示
+	var userInfo = $('.user-info') ;
+	var infoList = $('.info-list') ;
+	userInfo.mouseenter(function(){
+		infoList.stop(true).show().animate({top:40}) ;
+	})
+	userInfo.mouseleave(function(){
+		infoList.animate({top:-120},function(){
+			infoList.hide()
+		}) ;
+	})
 	
 	//购物车显示
 	var cart = $('.tp-cart') ;

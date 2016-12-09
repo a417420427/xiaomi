@@ -37,6 +37,7 @@ body{
         width: 358px;
         height: 48px;
         border: 1px solid #e0e0e0;
+        position: relative;
         input{
             width: 326px;
             height: 22px;
@@ -47,9 +48,24 @@ body{
             background: none;
         }
         input.btn{
+            position: relative;
+            z-index: 1;
             height: 48px;
             width: 358px;
         }
+        .erro{
+            position: absolute;
+            display: block;
+            color: #F13F40;
+            right: -100px;
+            padding-left: 20px;
+            width: 80px;
+            line-height: 48px;
+            top: 0;
+        }
+    }
+    .erro{
+        
     }
     .wrap.wrap-btn{
         position: relative;
@@ -68,6 +84,7 @@ body{
             font-size: 14px;
             text-align: center;
         }
+        
     }
     
     .other{
